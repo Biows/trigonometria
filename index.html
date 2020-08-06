@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometria</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Trigonometria</h1>
+        <p style="font-size: 18px;">Informe o ângulo e a medida de um lado que vamos descobrir os outros dois que faltam.</p>
+    </header>
+
+    <section>
+        <div id="inputs">
+            <p>
+                <input type="number" id="ang" placeholder="Ângulo">
+            </p>
+
+            <p>
+                <input type="number" id="hip" placeholder="Hipotenusa" onchange="desca12(this.value)">
+            </p>
+
+            <p>
+                <input type="number" id="ca1" placeholder="Cateto oposto" onchange="deshca2(this.value)">
+            </p>
+            <p>
+                <input type="number" id="ca2" placeholder="Cateto adjacente" onchange="deshca1(this.value)">
+            </p>
+
+           
+
+        </div>
+        <button id="btn" onclick="calcular()">Mostrar medidas</button>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lucaslopespultz</p>
+    </footer>
+</body>
+</html>
