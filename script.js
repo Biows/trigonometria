@@ -17,20 +17,34 @@ function angIsWrite(ang=0){
     }
 }
 
-function desca12(h){
-    document.getElementById('ca1').setAttribute('disabled','')
-    document.getElementById('ca2').setAttribute('disabled','')
-
+function desca12(h=0){
+    if(h != 0){
+        document.getElementById('ca1').setAttribute('disabled','')
+        document.getElementById('ca2').setAttribute('disabled','')
+    }else{
+        document.getElementById('ca1').removeAttribute('disabled','')
+        document.getElementById('ca2').removeAttribute('disabled','')
+    }
 }
 
-function deshca2(c1){
-    document.getElementById('hip').setAttribute('disabled','')
-    document.getElementById('ca2').setAttribute('disabled','')
+function deshca2(c1=0){
+    if(c1 != 0){
+        document.getElementById('ca2').setAttribute('disabled','')
+        document.getElementById('hip').setAttribute('disabled','')
+    }else{
+        document.getElementById('ca2').removeAttribute('disabled','')
+        document.getElementById('hip').removeAttribute('disabled','')
+    }
 }
 
-function deshca1(c2){
-    document.getElementById('hip').setAttribute('disabled','')
-    document.getElementById('ca1').setAttribute('disabled','')
+function deshca1(c2=0){
+    if(c2 != 0){
+        document.getElementById('hip').setAttribute('disabled','')
+        document.getElementById('ca1').setAttribute('disabled','')
+    }else{
+        document.getElementById('hip').removeAttribute('disabled','')
+        document.getElementById('ca1').removeAttribute('disabled','')
+    }
 }
 
 function calcular(){
